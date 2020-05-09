@@ -14,7 +14,7 @@ TODO video
 
 
 ## Project Configuration
-This is part 2 project configuration.
+This is the part 2 project configuration.
 
 | Setting | Value |
 | --- | --- |
