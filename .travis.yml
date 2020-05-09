@@ -9,25 +9,36 @@ install:
 script:
   - npm run build
 
-before_deploy:
+#before_deploy:
   # Add the server libraries, b/c express is running from the dist directory
   #- git add -f dist/node_modules
   # Add any changes that should be shipped in the deployment, but don't commit
   #- git add -A
 
+# deploy:
+#   - provider: elasticbeanstalk
+#     edge: true
+#     skip_cleanup: true
+#     access_key_id:
+#       secure: "oOwAVDPhOrdWZC/USp3+2kfY8r3QnvP6HH/bfuJccmxr2ukERwSTd9w9gEhqx5Fz2/YyyCCwxXhM2za7CJHObWugcOG5oSDXZmmUHsiOe8SuDUcEn+zEA26TSvbAPklVlXmgq+y+mc5c7O0Y0MxBnZovvTZpk5RgjYxFW/U93fvPvtdvIGFh4P7PVePMAinr8FbsZqaRhJqM9xNfqDJVAfItHMXgCxF+Dr/vw14Mf0LtTV1Djx+0gRAHSw0hK9OV8o7Waat40TWPywLGoj+pbqfeqwhsoZPkLGr158e80l+EMRn+EOz0NKXnQhpP77s5HF2VwzKwYf19VBa7AlK8lC6bIX4s2ox+s0ductOb50bBeCAJbIaBswi6iCU/PMXsRboYopSK5hdwtihqiw2nXNFAlTTllrIZyGZIM3QrBx8UfnyOnYrPF0GHVC3s2uctNUMXonok7HlYQp1Ct6hdX4r1Yd/yT97WA68r3w7A4B3DnjFcm6edxdOgWhMVDl2xNKZ7yWuHdylKK9vKzJz+WEutfg6y+c6L7+oj9Fj17XpEM5tW4xWEcLlRWpY92U2deEDkqpbwwuwcnk9SB58T0Z5GR6LBlh2wkR2d1emWHUBn/YxXa1jdfb+7GANcMQq2fv+y/cxAqTpC0asm1VGlivRGwPzHRI9emWG7fRwnwsc=" 
+#     secret_access_key:
+#       secure: "xlDXU8xC8RMJSroxplF2lEEdKeoizHN8wHbGOZWXa+O1NHW8fxRFo8f5bnVWT8J3Ztk9CY+GSr8MkahKnSWrTjIEw8atyGBNCdPvGfLo3+jvuutC9lN90n6iDHZQW42659Rgbu+vjnz2ySuNfOKAxd69gi+iGJHvw6CD2v0s0gssgk1qknnyoIkRe+c2w9W+pRU7NVQm9xxugDTzTRh4oculg5BU2BWZDbzvX1UUF30Fo5Of11gbSrJf6XnVeD1Qduq62hW2Eum85P199m21cj8ICYQ3YsXxsPFTisJa88Cyc94LMWqE0cBrEDY7Q7vIsvUl1NkqgGiXmFrSkW7UAkauw2nvwHdL1PJyO2VQ3an5gWsnv8rVMIKltBJPtXKHG3xDrw1Vl2j95DzFGoObIW18Sa6gYqqUPPygRdKDxAVPI2RjIURjeG6196LkdbL4r/rcNDNY65R9CvskW9qla3t/6aPGkxIS8smxT+5hEjZ8xhBpR8+W6SJuJSe0TERE7pp5AzjVZTdRGs/CqZ4dpRSEhheb7ArFxjT5iXIbmghXIKPJw1hWH/sD2c0yxuig9pdntgqOPXJ3pMB8llIwQIbeSIedxkttPviym9zogwkTyNlvTVty+8VP4IaXP9kvqFiRCYOVc9uKjcQraFlzkKXqwwWB8XqNNv3uJzkvdCE=" 
+#     region: "us-east-2"
+#     app: "sandbox-multi-container-app"
+#     env: "sandbox-staging-v1"
+    
 deploy:
-  - provider: elasticbeanstalk
-    edge: true
-    skip_cleanup: true
-    access_key_id:
-      secure: "oOwAVDPhOrdWZC/USp3+2kfY8r3QnvP6HH/bfuJccmxr2ukERwSTd9w9gEhqx5Fz2/YyyCCwxXhM2za7CJHObWugcOG5oSDXZmmUHsiOe8SuDUcEn+zEA26TSvbAPklVlXmgq+y+mc5c7O0Y0MxBnZovvTZpk5RgjYxFW/U93fvPvtdvIGFh4P7PVePMAinr8FbsZqaRhJqM9xNfqDJVAfItHMXgCxF+Dr/vw14Mf0LtTV1Djx+0gRAHSw0hK9OV8o7Waat40TWPywLGoj+pbqfeqwhsoZPkLGr158e80l+EMRn+EOz0NKXnQhpP77s5HF2VwzKwYf19VBa7AlK8lC6bIX4s2ox+s0ductOb50bBeCAJbIaBswi6iCU/PMXsRboYopSK5hdwtihqiw2nXNFAlTTllrIZyGZIM3QrBx8UfnyOnYrPF0GHVC3s2uctNUMXonok7HlYQp1Ct6hdX4r1Yd/yT97WA68r3w7A4B3DnjFcm6edxdOgWhMVDl2xNKZ7yWuHdylKK9vKzJz+WEutfg6y+c6L7+oj9Fj17XpEM5tW4xWEcLlRWpY92U2deEDkqpbwwuwcnk9SB58T0Z5GR6LBlh2wkR2d1emWHUBn/YxXa1jdfb+7GANcMQq2fv+y/cxAqTpC0asm1VGlivRGwPzHRI9emWG7fRwnwsc=" 
-    secret_access_key:
-      secure: "xlDXU8xC8RMJSroxplF2lEEdKeoizHN8wHbGOZWXa+O1NHW8fxRFo8f5bnVWT8J3Ztk9CY+GSr8MkahKnSWrTjIEw8atyGBNCdPvGfLo3+jvuutC9lN90n6iDHZQW42659Rgbu+vjnz2ySuNfOKAxd69gi+iGJHvw6CD2v0s0gssgk1qknnyoIkRe+c2w9W+pRU7NVQm9xxugDTzTRh4oculg5BU2BWZDbzvX1UUF30Fo5Of11gbSrJf6XnVeD1Qduq62hW2Eum85P199m21cj8ICYQ3YsXxsPFTisJa88Cyc94LMWqE0cBrEDY7Q7vIsvUl1NkqgGiXmFrSkW7UAkauw2nvwHdL1PJyO2VQ3an5gWsnv8rVMIKltBJPtXKHG3xDrw1Vl2j95DzFGoObIW18Sa6gYqqUPPygRdKDxAVPI2RjIURjeG6196LkdbL4r/rcNDNY65R9CvskW9qla3t/6aPGkxIS8smxT+5hEjZ8xhBpR8+W6SJuJSe0TERE7pp5AzjVZTdRGs/CqZ4dpRSEhheb7ArFxjT5iXIbmghXIKPJw1hWH/sD2c0yxuig9pdntgqOPXJ3pMB8llIwQIbeSIedxkttPviym9zogwkTyNlvTVty+8VP4IaXP9kvqFiRCYOVc9uKjcQraFlzkKXqwwWB8XqNNv3uJzkvdCE=" 
-    region: "us-east-2"
-    app: "sandbox-multi-container-app"
-    env: "sandbox-staging-v1"
-    bucket_name: "donnelson-deploy-bucket"
-
+  provider: elasticbeanstalk
+  access_key_id: 
+    secure: "oOwAVDPhOrdWZC/USp3+2kfY8r3QnvP6HH/bfuJccmxr2ukERwSTd9w9gEhqx5Fz2/YyyCCwxXhM2za7CJHObWugcOG5oSDXZmmUHsiOe8SuDUcEn+zEA26TSvbAPklVlXmgq+y+mc5c7O0Y0MxBnZovvTZpk5RgjYxFW/U93fvPvtdvIGFh4P7PVePMAinr8FbsZqaRhJqM9xNfqDJVAfItHMXgCxF+Dr/vw14Mf0LtTV1Djx+0gRAHSw0hK9OV8o7Waat40TWPywLGoj+pbqfeqwhsoZPkLGr158e80l+EMRn+EOz0NKXnQhpP77s5HF2VwzKwYf19VBa7AlK8lC6bIX4s2ox+s0ductOb50bBeCAJbIaBswi6iCU/PMXsRboYopSK5hdwtihqiw2nXNFAlTTllrIZyGZIM3QrBx8UfnyOnYrPF0GHVC3s2uctNUMXonok7HlYQp1Ct6hdX4r1Yd/yT97WA68r3w7A4B3DnjFcm6edxdOgWhMVDl2xNKZ7yWuHdylKK9vKzJz+WEutfg6y+c6L7+oj9Fj17XpEM5tW4xWEcLlRWpY92U2deEDkqpbwwuwcnk9SB58T0Z5GR6LBlh2wkR2d1emWHUBn/YxXa1jdfb+7GANcMQq2fv+y/cxAqTpC0asm1VGlivRGwPzHRI9emWG7fRwnwsc=" 
+  secret_access_key:
+    secure: W1CyRMhQtn/AXuvyahPfMcu3ZKk1NngOdX54FaZjzrOldLjId2Z659f9esTJFtvtWMDKQrQtNjw0Hmy9Nel5R5p+ehLYnQ4f+8p3rlfYjT+KCH7fJfbw6s3eeKIWjWiAd4mq4v1KlDDrpixD1+mBurHu20/sgf2ChUhQYu4km+SUMHmNLdBHDeJ52SjofJOWnmsz5ymJTHJjeQVoIX8LiptERd0t3uqmPYkqWoUWRhvUzhQpSxaKGfLF/gsbKILwvm4p7+TVwDD07rhowRdCh7VQ3o+QwdYNBUNmROdr6942wvUj1mqzI6CIb/qabJJcYXhRVggM2DjHjDP3Ia5fOLFEsC5OQZhD/mZ02seo267Ii2ieFCp2XfgIvjy50osmyBNUtYbD+22LsYensUBeSu/qWoYfJj9pq7VbDWSz4Cq7kNVydzcouX/flkUD8jTSNZSThaRZ75UguTcS/QKNIj6nA0LnZUqzSwryoHj4Kz6mio29NsH/4vKePxEwqK1OYSuRulBGe6iJiUbsL/0b0luaYEItmhCSdhjNk+aS5f3EYol2tONfLKMDgbW9u6w+89xwXACMet/5cF63QUDh7Ou1xcBaOPNjZQcWdBtx0+rb7qUDTl0bPsCJeWb8Vgr1zD6cyHne9RozOKxK+ET3gD7I6aNm+HLrJZ8iLIP5ONg=
+  region: us-west-2
+  app: sandbox-multi-container-app
+  env: sandbox-staging-v1
+  on:
+    repo: branflake2267/debugging-multi-docker-aws-eb
+  skip_cleanup: 'true'
 
 # Run Travis CLI in this repo
 # gem install travis
@@ -42,3 +53,5 @@ deploy:
 # cd to/this/repo
 # travis encrypt xxx_replace_with_access_key_id
 # travis encrypt xxx_replace_with_with_secret_key
+
+# OR run: travis setup elasticbeanstalk
