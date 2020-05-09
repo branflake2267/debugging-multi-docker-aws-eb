@@ -10,7 +10,10 @@ script:
   - npm run build
 
 before_deploy:
-  # remove unused directories
+  # Move the AWS Container boot instructions to dist
+  - cp ./Dockerrun.aws.json ./dist
+
+  # Remove unused directories
   - rm -rf ./client
   - rm -rf ./server
 
@@ -43,3 +46,4 @@ deploy:
 # travis encrypt xxx_replace_with_access_key_id
 # travis encrypt xxx_replace_with_with_secret_key
 
+# Note: Debug deployment on EC2: in docker container, or EB dash logs, in file: /var/log/eb-activity.log

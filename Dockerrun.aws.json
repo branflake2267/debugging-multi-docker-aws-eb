@@ -11,7 +11,7 @@
   "containerDefinitions": [
     {
       "name": "web-app",
-      "image": "node:latest",
+      "image": "node:lts",
       "essential": true,
       "memory": 256,
 
