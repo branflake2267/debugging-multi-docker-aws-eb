@@ -64,7 +64,7 @@ Make sure things work locally in the `eb local run` runner!
 | cmd | details |
 | --- | --- |
 | docker ps | list the docker containers and [container id]s |
-| docker exec -it [container id] bash| bash into the container. (The container name could be used as well.) |  
+| docker exec -it [container id] bash| /bin/bash into the container. (The container name could be used as well.) |  
 
 
 ## Build
@@ -115,3 +115,4 @@ Run `eb create sandbox-staging-v1` where `sandbox-staging-v1` is the enviornment
 ## Docker Config
 The `Dockerrun.aws.json` will configure the docker container when deployed. 
 In this configuration I won't show how to build and deploy a Docker image to ECR.
+
