@@ -1,0 +1,39 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "volumes": [
+    {
+      "name": "web-app",
+      "host": {
+        "sourcePath": "/var/app/current/"
+      }
+    }
+  ],
+  "containerDefinitions": [
+    {
+      "name": "web-app",
+      "image": "node:latest",
+      "essential": true,
+      "memory": 256,
+
+      "command": [
+        "node",
+        "/app/dist/express.js"
+      ],
+
+      "mountPoints": [
+        {
+          "sourceVolume": "web-app",
+          "containerPath": "/app",
+          "readOnly": true
+        }
+      ],
+
+      "portMappings": [
+        {
+          "hostPort": 80,
+          "containerPort": 3000
+        }
+      ]
+    }
+  ]
+}

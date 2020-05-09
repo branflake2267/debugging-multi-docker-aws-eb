@@ -1,0 +1,11 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Server side",
+  "scripts": {
+    "start": "node express.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
