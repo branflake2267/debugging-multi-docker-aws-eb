@@ -78,7 +78,7 @@ Build from the root of this project.
 
 
 ## Deploy
-TODO
+Travis CI server deploys to Elastic Beanstalk. 
 
 
 
