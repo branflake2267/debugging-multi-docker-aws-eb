@@ -1,7 +1,7 @@
 {
-  "name": "debugging-express-with-simplehtmlwebpack",
+  "name": "debugging-multi-docker-aws-eb",
   "version": "1.0.0",
-  "description": "This project is using an Express server with simple html webpack client front end.",
+  "description": "This project is using an Express server with simple html webpack client front end. And is set up to deploy to Elastic Beanstalk.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/branflake2267/debugging-express-with-simplehtmlwebpack.git"
