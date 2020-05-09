@@ -7,8 +7,8 @@ This project extends part 1, [debugging an express server and simple webpack cli
 
 [![Debugging Video Tutorial](https://img.youtube.com/vi/-Y8J4sgr6uU/0.jpg)](https://www.youtube.com/watch?v=-Y8J4sgr6uU)
 
-## Part 2: Debugging Client & Server with Elastic Beanstalk
-Follow along with part 2 and see debugging in action with AWS Elastick Beanstalk multi-docker container configuration. 
+## Part 2: Debugging Client & Server Source with Elastic Beanstalk
+Part 2 adds Elastic Beanstalk to the project deployment configuration. This video covers how to debug the project with Elastic Beanstalk multi-docker container format. 
 
 TODO video 
 
