@@ -2,20 +2,20 @@
 
 [![Build Status](https://www.travis-ci.org/branflake2267/debugging-multi-docker-aws-eb.svg?branch=master)](https://www.travis-ci.org/branflake2267/debugging-multi-docker-aws-eb)
 
-**Part 1: Debugging client and Server** - Debug the client & server
+## Part 1: Debugging client and Server
+This project extends part 1, [debugging an express server and simple webpack client](https://github.com/branflake2267/debugging-express-with-simplehtmlwebpack). Check this it for even more debugging tips and tricks. 
 
 [![Debugging Video Tutorial](https://img.youtube.com/vi/-Y8J4sgr6uU/0.jpg)](https://www.youtube.com/watch?v=-Y8J4sgr6uU)
 
-**Part 2: Debugging Configuring AWS and Debugging** - Debbug with AWS Elastic Beanstalk
+## Part 2: Debugging Configuring AWS and Debugging 
+Follow along with part 2 and see debugging in action with AWS Elastick Beanstalk multi-docker container configuration. 
 
 TODO video 
 
 
-## Parent Project 
-This project extends part 1, [debugging an express server and simple webpack client](https://github.com/branflake2267/debugging-express-with-simplehtmlwebpack). Check this it for even more debugging tips and tricks. 
+## Project Configuration
+This is part 2 project configuration.
 
-
-## Part 2: Project Configuration
 | Setting | Value |
 | --- | --- |
 | Purpose | Debugging a client & server multi-container docker config hosted on Elastic Beanstalk |
