@@ -10,12 +10,10 @@ script:
   - npm run build
 
 before_deploy:
-  # Move the AWS Container boot instructions to dist
-  - cp ./Dockerrun.aws.json ./dist
-
-  # Remove unused directories
+  # Remove unused files and dirs
   - rm -rf ./client
   - rm -rf ./server
+  - rm package.json package-lock.json
 
 # Note: Be sure region has the bucket and application in that region.
 deploy:
