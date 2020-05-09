@@ -9,11 +9,10 @@ install:
 script:
   - npm run build
 
-#before_deploy:
-  # Add the server libraries, b/c express is running from the dist directory
-  #- git add -f dist/node_modules
-  # Add any changes that should be shipped in the deployment, but don't commit
-  #- git add -A
+before_deploy:
+  # remove unused directories
+  - rm -rf ./client
+  - rm -rf ./server
 
 # Note: Be sure region has the bucket and application in that region.
 deploy:
