@@ -3,6 +3,7 @@
 [![Build Status](https://www.travis-ci.org/branflake2267/debugging-multi-docker-aws-eb.svg?branch=master)](https://www.travis-ci.org/branflake2267/debugging-multi-docker-aws-eb)
 
 **Debugging client and Server** - Debug the client & server
+
 [![Debugging Video Tutorial](https://img.youtube.com/vi/-Y8J4sgr6uU/0.jpg)](https://www.youtube.com/watch?v=-Y8J4sgr6uU)
 
 **Debugging Configuring AWS and Debugging** - Debbug with AWS Elastic Beanstalk
