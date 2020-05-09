@@ -17,7 +17,7 @@
     "clean": "rm -rf ./dist && mkdir ./dist",
     "build": "npm run clean && npm run buildClient && npm run buildDist",
     "buildClient": "cd client && npm run build && cd ../",
-    "buildDist": "cp -R ./server/ dist && cp -R ./client/dist/ ./dist/server/html",
+    "buildDist": "cp -R ./server/* dist && cp -R ./client/dist/ ./dist/html",
     "serverFromDist": "node ./dist/express.js"
   },
   "dependencies": {},

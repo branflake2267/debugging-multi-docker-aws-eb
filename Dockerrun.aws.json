@@ -17,7 +17,7 @@
 
       "command": [
         "node",
-        "/app/dist/server/express.js"
+        "/app/dist/express.js"
       ],
 
       "mountPoints": [
