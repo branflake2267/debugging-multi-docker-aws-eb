@@ -26,6 +26,7 @@ deploy:
     region: "us-east-2"
     app: "sandbox-multi-container-app"
     env: "sandbox-staging-v1"
+    bucket_name: donnelson-deploy-bucket
 
 
 # Run Travis CLI in this repo
