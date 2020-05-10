@@ -64,7 +64,8 @@ Make sure things work locally in the `eb local run` runner!
 | cmd | details |
 | --- | --- |
 | docker ps | list the docker containers and [container id]s |
-| docker exec -it [container id] bash| /bin/bash into the container. (The container name could be used as well.) |  
+| docker exec -it [container id] bash| /bin/bash into the container. (The container name could be used as well.) |
+| eb local run | This will run the Dockerrun.aws.json multi-container configuration  |  
 
 
 ## Build
@@ -78,7 +79,7 @@ Build from the root of this project.
 
 
 ## Deploy
-Travis CI server deploys to Elastic Beanstalk. 
+[Travis CI server deploys](https://www.travis-ci.org/github/branflake2267/debugging-multi-docker-aws-eb) to Elastic Beanstalk. 
 
 
 
