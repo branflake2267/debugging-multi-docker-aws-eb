@@ -84,7 +84,7 @@ Build from the root of this project.
 
 
 
-## Configure Elastic Beanstack Application & Enviornment
+## Init: Configure Elastic Beanstalk Application & Enviornment
 This is a reference on how the Elastic Beanstalk application was created.
 
 ### Configure AWS & EB CLI
