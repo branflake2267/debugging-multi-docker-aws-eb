@@ -10,7 +10,7 @@ This project extends part 1, [debugging an express server and simple webpack cli
 ## Part 2: Debugging Client & Server Source with Elastic Beanstalk
 Part 2 adds Elastic Beanstalk to the project deployment configuration. This video covers how to debug the project with Elastic Beanstalk multi-docker container format. 
 
-TODO video 
+[![Debugging Video Tutorial](https://img.youtube.com/vi/exbLigZZCZU/0.jpg)](https://www.youtube.com/watch?v=exbLigZZCZU)
 
 
 ## Project Configuration
@@ -27,6 +27,7 @@ This is the part 2 project configuration.
 | CI | Travis CI |
 | Hosted | Elastic Beanstalk |
 | License | GPL v3 |
+| Tutorial | [Youtube Tutorial](https://www.youtube.com/watch?v=exbLigZZCZU) |
 
 
 ## Debugging
