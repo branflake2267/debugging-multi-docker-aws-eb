@@ -1,4 +1,5 @@
 # Debugging a multi-container docker config hosted on Elastic Beanstalk
+This is part 2. This project covers debugging the AWS configuration and deploying the simple web application to a Elastic Beanstalk multi docker container configuration. Check out part 1 which covers debugging the web application. 
 
 [![Build Status](https://www.travis-ci.org/branflake2267/debugging-multi-docker-aws-eb.svg?branch=master)](https://www.travis-ci.org/branflake2267/debugging-multi-docker-aws-eb)
 
