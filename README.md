@@ -21,11 +21,12 @@ This is the part 2 project configuration.
 | Purpose | Debugging a client & server multi-container docker config hosted on Elastic Beanstalk |
 | Server | Express web server |
 | Client | Simple HTML/JavaScript webpack configuration |
-| Language | JavaScript |
+| Client Language | JavaScript |
+| Server Language | JavaScript |
 | Architecture | npm/node |
 | IDE | Visual Studio Code |
 | CI | Travis CI |
-| Hosted | Elastic Beanstalk |
+| Hosting | Elastic Beanstalk |
 | License | GPL v3 |
 | Tutorial | [Youtube Tutorial](https://www.youtube.com/watch?v=exbLigZZCZU) |
 
